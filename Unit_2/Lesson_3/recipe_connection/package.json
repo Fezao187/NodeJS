@@ -1,0 +1,11 @@
+{
+  "name": "recipe_connection",
+  "version": "1.0.0",
+  "description": "Recipe app",
+  "main": "main.js",
+  "scripts": {
+    "test": "This is my recipe"
+  },
+  "author": "Katlego",
+  "license": "ISC"
+}
