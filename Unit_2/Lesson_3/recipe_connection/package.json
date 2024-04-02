@@ -1,12 +1,12 @@
 {
   "name": "recipe_connection",
   "version": "1.0.0",
-  "description": "Recipe app",
+  "description": "An app to share cooking recipes",
   "main": "main.js",
   "scripts": {
-    "test": "This is my recipe"
+    "test": "Something"
   },
-  "author": "Katlego",
+  "author": "Katlego Maredi",
   "license": "ISC",
   "dependencies": {
     "cities": "^2.0.0"

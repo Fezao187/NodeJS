@@ -4,3 +4,5 @@ let messages = [
     "Chilled",
     "whatever"
 ];
+
+messages.forEach(value => console.log(value));
