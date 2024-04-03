@@ -1,0 +1,14 @@
+{
+  "name": "server_html",
+  "version": "1.0.0",
+  "description": "Creating html file",
+  "main": "main.js",
+  "scripts": {
+    "test": "Test"
+  },
+  "author": "Katlego",
+  "license": "ISC",
+  "dependencies": {
+    "http-status-codes": "^2.3.0"
+  }
+}

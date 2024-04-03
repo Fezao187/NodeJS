@@ -40,6 +40,7 @@ const port = 3000,
     http = require("http"),
     httpStatus = require("http-status-codes"),
     app = http.createServer((req, res) => {
+        console.log("URL is: ", req.url);
         res.writeHead(200, {
             "Content-Type": "text/html"
         });
