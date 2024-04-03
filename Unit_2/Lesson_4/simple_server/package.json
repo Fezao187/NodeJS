@@ -1,0 +1,14 @@
+{
+  "name": "simple_server",
+  "version": "1.0.0",
+  "description": "Just a simple server",
+  "main": "main.js",
+  "scripts": {
+    "test": "Yes"
+  },
+  "author": "Katlego Maredi",
+  "license": "ISC",
+  "dependencies": {
+    "http-status-codes": "^2.3.0"
+  }
+}
