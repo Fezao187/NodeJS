@@ -1,7 +1,7 @@
 {
-  "name": "server_html",
+  "name": "serve2_html",
   "version": "1.0.0",
-  "description": "Creating html file",
+  "description": "Sending to html",
   "main": "main.js",
   "scripts": {
     "test": "Test"
