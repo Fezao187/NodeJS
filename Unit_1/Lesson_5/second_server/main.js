@@ -27,7 +27,7 @@
 // console.log(`The server has started and is listening on port number:
 //     ➥${port}`);
 
-//5.6 Simple routing
+// 5.6 Simple routing
 const routeResponseMap = {
     "/info": "<h1>Info Page</h1>",
     "/contact": "<h1>Contact Us</h1>",
@@ -40,6 +40,7 @@ const port = 3000,
     http = require("http"),
     httpStatus = require("http-status-codes"),
     app = http.createServer((req, res) => {
+      /** */  setTimeout(() => res.end(routeResponseMap[req.url]), 2000);
         console.log("URL is: ", req.url);
         res.writeHead(200, {
             "Content-Type": "text/html"
@@ -49,6 +50,7 @@ const port = 3000,
         } else {
             res.end("<h1>Welcome!</h1>");
         }
+        
     });
 app.listen(port);
 console.log(`The server has started and is listening on port number:

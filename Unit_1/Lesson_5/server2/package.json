@@ -1,0 +1,14 @@
+{
+  "name": "server2",
+  "version": "1.0.0",
+  "description": "Testing sever app",
+  "main": "main2.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Katlego",
+  "license": "ISC",
+  "dependencies": {
+    "http-status-codes": "^2.3.0"
+  }
+}
