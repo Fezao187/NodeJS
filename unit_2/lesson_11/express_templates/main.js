@@ -28,6 +28,7 @@ app.post("/", (req, res) => {
   res.send("POST Successful!");
 });
 
+//Add error-handling middleware to mainJS
 app.use(errorController.logErrors);
 app.use(errorController.respondNoResourceFound);
 app.use(errorController.respondInternalError);
