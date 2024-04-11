@@ -6,10 +6,10 @@ const express = require("express"),
   app = express(),
   homeController = require("./controllers/homeController"),
   errorController = require("./controllers/errorController"),
-  //  Require the expressejs-layouts module
+  //  Require the express-ejs-layouts module
   layouts = require("express-ejs-layouts");
 
-  // Set the application to use ejs.
+// Set the application to use ejs.
 app.set("view engine", "ejs");
 app.set("port", process.env.PORT || 3000);
 //Tell the Express.js app to use body-parser for processing URLencoded and JSON parameters.
