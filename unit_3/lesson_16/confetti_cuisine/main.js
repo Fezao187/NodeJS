@@ -8,8 +8,8 @@ const express = require("express"),
   errorController = require("./controllers/errorController"),
   // Require the subscribers controller.
   subscribersController = require(
-    "./controllers/subscribersController");
-layouts = require("express-ejs-layouts");
+    "./controllers/subscribersController"),
+  layouts = require("express-ejs-layouts");
 
 //Setup the database connection
 mongoose.connect(
