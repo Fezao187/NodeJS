@@ -25,29 +25,35 @@
                     <div class="col-md-10 col-lg-8 col-xl-7">
                         <!-- Post preview-->
                         <!--With the provided blogposts array, we use a for loop to loop through its elements.  -->
-                        <% for (var i = 0; i < blogposts.length; i++) { %> 
-                        <div class="post-preview">
-                            <a href="/post/<%= blogposts[i].id %>">
-                                <h2 class="post-title"><%= blogposts[i].title %></h2>
-                                <h3 class="post-subtitle"><%= blogposts[i].body %></h3>
-                            </a>
-                            <p class="post-meta">
-                                Posted by
-                                <a href="#!">Start Bootstrap</a>
-                                on September 24, 2023
-                            </p>
-                        </div>
-                        <% } %> 
-                        <!-- Pager-->
-                        <div class="d-flex justify-content-end mb-4"><a class="btn btn-primary text-uppercase"
-                                href="#!">Older
-                                Posts →</a></div>
+                        <% for (var i=0; i < blogposts.length; i++) { %>
+                            <div class="post-preview">
+                                <a href="/post/<%= blogposts[i].id %>">
+                                    <h2 class="post-title">
+                                        <%= blogposts[i].title %>
+                                    </h2>
+                                    <h3 class="post-subtitle">
+                                        <%= blogposts[i].body %>
+                                    </h3>
+                                </a>
+                                <p class="post-meta">
+                                    Posted by
+                                    <a href="#">
+                                        <%= blogposts[i].username %>
+                                    </a>
+                                    on <%= blogposts[i].datePosted.toDateString() %>
+                                </p>
+                            </div>
+                            <% } %>
+                                <!-- Pager-->
+                                <div class="d-flex justify-content-end mb-4"><a class="btn btn-primary text-uppercase"
+                                        href="#!">Older
+                                        Posts →</a></div>
                     </div>
                 </div>
             </div>
             <!-- Include the footer and scripts -->
             <%- include('layouts/footer'); -%>
-            <%- include('layouts/scripts'); -%>
+                <%- include('layouts/scripts'); -%>
     </body>
 
 </html>

@@ -5,7 +5,12 @@ const mongoose = require('mongoose'),
     BlogPostSchema = new Schema({
         title: String,
         body: String,
-        name: String
+        username: String,
+        datePosted: { /* can declare property type with an object like this 
+because we need 'default' */
+            type: Date,
+            default: new Date()
+        }
     }),
     //Access the database via mongoose.model
     BlogPost = mongoose.model('BlogPost', BlogPostSchema);

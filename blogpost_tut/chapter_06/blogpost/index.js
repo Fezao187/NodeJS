@@ -84,8 +84,11 @@ app.get('/contact', (req, res) => {
 
 //Append a parameter for the route for a single post by ID
 app.get('/post/:id', async (req, res) => {
+    //Call a specific ID to retrieve blog post with that ID
     const blogpost = await BlogPost.findById(req.params.id);
+    console.log("Param",req.params.id);
     res.render('post', {
+        // Pass the blogpost variable to post.ejs
         blogpost
     });
 });
