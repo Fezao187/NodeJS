@@ -40,7 +40,7 @@ app.use(express.urlencoded());
 //     // console.log(req.body);
 //     // res.redirect('/');
 //     // model creates a new doc with browser data 
-//     // console.log(req.body);
+//     console.log(req.body);
 //     BlogPost.create(req.body).then(blogpost => {
 //         console.log("Successfully created\n" + blogpost);
 //         res.redirect('/');
