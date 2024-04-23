@@ -31,7 +31,6 @@ app.use(express.static('public'));
 app.use(express.json());
 app.use(express.urlencoded());
 
-
 // Handle the post request
 // app.post('/posts/store', (req, res) => {
 //     // /**Get the form data from the broswer via 
@@ -77,6 +76,7 @@ app.get('/contact', (req, res) => {
     // res.sendFile(path.resolve(__dirname, 'pages/contact.html'));
     res.render("contact");
 });
+
 // app.get('/post', (req, res) => {
 //     // res.sendFile(path.resolve(__dirname, 'pages/post.html'));
 //     res.render("post");
