@@ -1,0 +1,16 @@
+{
+  "name": "one_to_many_relationship",
+  "version": "1.0.0",
+  "description": "Exploring different types of relationships",
+  "main": "src/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon src/server.js"
+  },
+  "author": "Katlego",
+  "license": "ISC",
+  "dependencies": {
+    "mongoose": "^8.3.2",
+    "nodemon": "^3.1.0"
+  }
+}
