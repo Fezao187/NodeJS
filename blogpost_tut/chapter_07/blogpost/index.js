@@ -106,7 +106,7 @@ app.get('/post/:id', async (req, res) => {
     });
 });
 app.get('/posts/new', (req, res) => {
-    res.render('create')
+    res.render('create');
 });
 
 // Listen on port 4000
