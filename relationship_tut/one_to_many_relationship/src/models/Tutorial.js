@@ -9,11 +9,14 @@ const Tutorial = mongoose.model(
         images: [],
         comments: [
             {
-                // Set the types to ID
                 type: mongoose.Schema.Types.ObjectId,
                 ref: "Comment"
             }
-        ]
+        ],
+        category: {
+            type: mongoose.Schema.Types.ObjectId,
+            ref: "Category"
+        }
     })
 );
 
