@@ -57,6 +57,7 @@ app.use(fileUpload());
 //Async, specify that the method is asynchronous
 app.post('/posts/store', (req, res) => {
     let image = req.files.image;
+    console.log("Image******", image);
     // image.mv moves the uploaded file to public/img directory with the name from image.name
     image.mv(path.resolve(__dirname, 'public/assets/img', image.name), async (error) => {
         //Use await to wait for blogpost to create before......
