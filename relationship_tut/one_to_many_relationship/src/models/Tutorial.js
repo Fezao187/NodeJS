@@ -1,13 +1,19 @@
 // Case 1: Mongoose One-to-Many (Few) Relationship
 const mongoose = require("mongoose");
 
-// Create a tutorial model
 const Tutorial = mongoose.model(
     "Tutorial",
     new mongoose.Schema({
         title: String,
         author: String,
-        images: []
+        images: [],
+        comments: [
+            {
+                // Set the types to ID
+                type: mongoose.Schema.Types.ObjectId,
+                ref: "Comment"
+            }
+        ]
     })
 );
 
