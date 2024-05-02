@@ -63,7 +63,7 @@ app.use("*", (req, res, next) => {
     loggedIn = req.session.userId;
     next();
 });
-// Rehister flash middleware
+// Register flash middleware
 app.use(flash());
 
 // Handle the post request
