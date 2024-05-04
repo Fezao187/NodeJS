@@ -1,0 +1,22 @@
+{
+  "name": "login_page",
+  "version": "1.0.0",
+  "description": "For my JavaScript project, I created a login page\r using local storage to store my user data. Now in this projectm, I am going to improve it by implementing NodeJS into my login page and everything will be saved to the MongoDB database.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "author": "Katlego Maredi",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "connect-flash": "^0.1.1",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "express-session": "^1.18.0",
+    "mongoose": "^8.3.3",
+    "mongoose-unique-validator": "^5.0.0",
+    "nodemon": "^3.1.0"
+  }
+}

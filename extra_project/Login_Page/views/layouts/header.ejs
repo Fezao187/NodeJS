@@ -1,0 +1,14 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <% if(locals.login && login) { %>
+    <title>Login</title>
+    <% } %>
+    <% if(locals.create && create) {%>
+    <title>New Account</title>
+    <% } %>
+    <% if(locals.reset && reset) {%>
+    <title>Reset Password</title>
+    <% } %>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>

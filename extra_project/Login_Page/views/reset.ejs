@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('layouts/header'); -%>
+<body>
+    <div class="body">
+        <form id="form" class="resetAcc" action="/users/reset" method="POST">
+            <div class="container">
+                <h1>Reset Password</h1>
+                <input id="email" type="email" placeholder="Email" name="email">
+                <br>
+                <input id="username" type="text" placeholder="Username" name="username">
+                <div class="usernameErr"></div>
+                <input id="newPassword" type="password" placeholder="New Password" name="password">
+                <div class="pwdErr"></div>
+                <input id="confirmPassword" type="password" placeholder="Confirm Password" name="password2">
+                <div class="pwdErr output"></div>
+                <p class="forgot">Remeber password? <br><a href="/">Login</a></p>
+                <button type="submit" id="reset_pass">Reset</button>
+                <p class="haveAcc">Don't have an account? <br><a href="/new/acc">Create Account</a></p>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

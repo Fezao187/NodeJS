@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('layouts/header'); -%>
+<body>
+    <div class="body">
+        <form id="form" class="newAccount" action="/users/register" method="POST">
+            <div class="container">
+                <h1>Create Account</h1>
+                <input id="name" type="text" placeholder="Name" name="name">
+                <br>
+                <input id="username" type="text" placeholder="Username" name="username">
+                <div class="usernameErr"></div>
+                <input id="email" type="email" placeholder="Email" name="email">
+                <br>
+                <input id="createPassword" type="password" placeholder="Create Password" name="password">
+                <div class="pwdErr"></div>
+                <input id="confirmPassword" type="password" placeholder="Confirm Password" name="password2">
+                <div class="pwdErr output"></div>
+                <button id="create" type="submit">Create Account</button>
+                <p class="haveAcc">Already have an account? <br><a href="/">Login</a></p>
+            </div>
+        </form>
+        <br>
+    </div>
+</body>
+
+</html>

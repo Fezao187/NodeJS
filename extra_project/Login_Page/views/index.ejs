@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('layouts/header'); -%>
+
+    <body>
+        <div class="body">
+            <form id="form" class="logOn" action="/users/login" method="POST">
+                <div class="container">
+                    <h1>Login</h1>
+                    <input id="username" type="text" placeholder="Username" name="username">
+                    <br>
+                    <input id="password" type="password" placeholder="Password" name="password">
+                    <div class="pwdErr"></div>
+                    <p class="forgot"><a href="/reset/acc">Forgot Password?</a></p>
+                    <button type="submit" id="login">Login</button>
+                    <p class="newAcc">Don't have an account? <br><a href="/new/acc">Create Account</a></p>
+                </div>
+            </form>
+        </div>
+    </body>
+
+</html>
