@@ -11,3 +11,4 @@ using local storage to store my user data. Now in this projectm, I am going to i
     * Work on the reset password page, retrieve data from the database then update the password.
     * Add a page to show the user that they have logged in.
     * Add a button to allow the user to log out once logged in.
+    + Add flash messages and display them to the user
